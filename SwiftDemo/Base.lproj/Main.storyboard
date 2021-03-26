@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TkQ-Hp-zwX"/>
+                        <segue destination="Sau-YE-4EG" kind="relationship" relationship="rootViewController" id="kSu-H2-Ds3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X20-4p-dMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,9 +26,46 @@
             <point key="canvasLocation" x="-694" y="74"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="8Dr-cb-1jU">
+            <objects>
+                <viewController id="Sau-YE-4EG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YR7-ZD-rL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1HN-48-KDs">
+                                <rect key="frame" x="149" y="460" width="116" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI2-lx-Y61">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                                        <state key="normal" title="UICollectionView"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="frT-aK-bUv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="mDi-om-mkV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="taz-kO-ec6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1HN-48-KDs" firstAttribute="centerX" secondItem="taz-kO-ec6" secondAttribute="centerX" id="Ox6-39-nky"/>
+                            <constraint firstItem="1HN-48-KDs" firstAttribute="centerY" secondItem="taz-kO-ec6" secondAttribute="centerY" id="bMx-3L-y8O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qf1-d1-En7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvP-Ig-ImO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="74"/>
+        </scene>
+        <!--Collection View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CollectionViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95.652173913043484" y="73.660714285714278"/>
+            <point key="canvasLocation" x="857" y="74"/>
         </scene>
     </scenes>
     <resources>
